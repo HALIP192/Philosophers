@@ -13,7 +13,7 @@
 #include "inc/philosophers.h"
 
 
-unsigned char	start_parse(t_data *restrict data, char *const argv)
+unsigned char	start_parse(t_data *restrict data, char *const *argv)
 {
 	data->stop = 0;
 	data->phil_num = ft_atoi(argv[1]);
@@ -46,7 +46,7 @@ int	pthread_create_loop(uint start, const t_data *restrict data)
 	{
 		pthread_error |= pthread_create(data->pthreads + start, NULL,
 				(void *(*)(void *))phil_routine,
-				(void *)((unsigned long long)start));
+				(void *)start);
 		usleep(50);
 		start += 2;
 	}
@@ -86,7 +86,7 @@ void	stop(t_data *restrict data)
 	}
 	pthread_join(data->pthreads[data->phil_num], NULL);
 	pthread_mutex_destroy(&data->stop_mutex);
-	ft_free(data);
+	ft_free_(data);
 }
 
 int	main(int argc, char *const *argv)

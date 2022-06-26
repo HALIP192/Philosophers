@@ -699,7 +699,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Philosophers"
+			"value" : "philo"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1007,6 +1007,42 @@
 		},
 		{
 			"name" : "Philosophers_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/ntitan/projects/Philosophers"
+		},
+		{
+			"name" : "philo_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/ntitan/projects/Philosophers/cmake-build-debug"
+		},
+		{
+			"name" : "philo_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "philo_SOURCE_DIR",
 			"properties" : 
 			[
 				{

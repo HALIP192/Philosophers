@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "Philosophers",
+					"name" : "philo",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Philosophers::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Philosophers-Debug-a2d1c5179683411bde12.json",
-					"name" : "Philosophers",
+					"id" : "philo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-philo-Debug-db5fec5e49cf9860e31d.json",
+					"name" : "philo",
 					"projectIndex" : 0
 				}
 			]

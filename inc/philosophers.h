@@ -35,19 +35,26 @@ typedef struct s_data
 	uint			eat_num;
 
 	pthread_t		*pthreads;
+	uintmax_t		*pthread_start;
 	pthread_mutex_t	*fork;
 	uint			*eaten;
-	uint 			*dt;
+	uintmax_t 		*dt;
 
 	unsigned char	stop;
 	pthread_mutex_t stop_mutex;
 }	t_data;
 
-int	main(int argc, char *const *argv);
-unsigned char	start_parse(t_data *restrict data, char *const argv);
-int	ft_atoi(const char *str);
-t_data	*init_struct(void);
-
+int				main(int argc, char *const *argv);
+unsigned char	start_parse(t_data *restrict data, char *const *argv);
+int				ft_atoi(const char *str);
+t_data			*init_struct(void);
+int				ft_malloc_(t_data *restrict data);
+void			ft_free_(t_data *restrict data);
+int				check_stop(t_data *restrict data);
+void			ft_putunbr(char *dest, uint n);
+uintmax_t		ft_time(void);
+void	*phil_routine(size_t phil_num);
+void	*death(t_data *data);
 
 # define ULL (unsigned long long )
 #endif
